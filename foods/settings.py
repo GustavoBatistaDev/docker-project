@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'list_foods',
+    'pacientes'
+
 ]
 
 MIDDLEWARE = [
@@ -77,12 +79,12 @@ WSGI_APPLICATION = 'foods.wsgi.application'
 
 DATABASES = {
     'default': {
-        #'ENGINE': 'django.db.backends.postgresql',
-       # 'NAME': config('POSTGRES_USER') ,
-        #'HOST': 'db',
-       # 'PORT': 5432,
-       # 'PASSWORD': config('POSTGRES_PASSWORD'),
-       # 'USER': config('POSTGRES_USER')
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('POSTGRES_USER') ,
+        'HOST': 'db',
+        'PORT': 5432,
+        'PASSWORD': config('POSTGRES_PASSWORD'),
+        'USER': config('POSTGRES_USER')
     }
 }
 
